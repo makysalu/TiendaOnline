@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pedidos</title>
+        <meta charset="UTF-8"/>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="contenedor">
+                <header id="cabecera">
+                        <span>
+                            <img id="logo" src="img/kebab.png" alt="logo">
+                        </span>
+                        <span id="Titulo">
+                            Suleyman's D&uuml;r&uuml;m
+                        </span>
+                        <nav>    
+                            <ul>
+                                <li>
+                                    <a href="index.html">Inicio</a>
+                                </li>
+                                <li>
+                                    <a href="pedidos.html">Haz un pedido</a> 
+                                </li>
+                                <li class="seleccionado">
+                                    <a href="contacto.html">Contacto</a> 
+                                </li>
+                            </ul>      
+                        </nav>
+                    </header>
+                    
+                        <form action="mailto:pedidos@foofoods.com" method="post" autocomplete="on">
+                            <section id="obciones_productos">
+                                <article>
+                                    <header>D&uuml;r&uuml;m de Pollo</header>
+                                    <label for="pollo"><strong>Cuantas unidades: </strong></label>
+                                    <input name="pollo" id="pollo" type="number" min="0" max="10" value="0" autocomplete="off"/>
+                                    <label for="p.picante"><strong>Nivel de picante </strong></label>
+                                    <input name="p.picante" id="p.picante" type="range" min="0" max="10">
+                                </article>
+                                <article>
+                                    <header>D&uuml;r&uuml;m de Ternera</header>
+                                    <p>
+                                        <label for="ternera"><strong>Cuantas unidades: </strong></label>
+                                        <input name="ternera" id="ternera" type="number" min="0" max="10" value="0" autocomplete="off"/>
+                                        <br>
+                                        <label for="t.picante"><strong>Nivel de picante </strong></label>
+                                        <br>
+                                        <input name="t.picante" id="t.picante" type="range" min="0" max="10"/>
+                                    </p>
+                                </article>
+                                <article>
+                                    <header>D&uuml;r&uuml;m Mixto</header>
+                                    <p>
+                                        <label for="mixto"><strong>Cuantas unidades: </strong></label>
+                                        <input name="mixto" id="mixto" type="number" min="0" max="10" value="0" autocomplete="off"/>
+                                        <br>
+                                        <label for="m.picante"><strong>Nivel de picante </strong></label>
+                                        <br>
+                                        <input name="m.picante" id="m.picante" type="range" min="0" max="10"/>
+                                    </p>
+                                </article>
+                                <article>
+                                    <header>D&uuml;r&uuml;m Vegetariano</header>
+                                    <p>
+                                        <label for="vegetariano"><strong>Cuantas unidades: </strong></label>
+                                        <input name="vegetariano" id="vegetariano" type="number" min="0" max="10" value="0" autocomplete="off"/>
+                                        <br>
+                                        <label for="v.picante"><strong>Nivel de picante </strong></label>
+                                        <br>
+                                        <input name="v.picante" id="v.picante" type="range" min="0" max="10"/>
+                                    </p>
+                                </article>
+                                <article>
+                                        <header><h3>Observaciones</h3></header>
+                                        <textarea name="observaciones" cols="50" rows="20" placeholder="Introducir cualquien informacion adicional y comentarios del pedido como alergias alimentarias..."></textarea>
+                                </article>
+                                <article>
+                                        <header><h3>Datos Personales</h3></header>
+                                        <label for="nombre"><strong>Nombre: </strong></label>
+                                        <input name="nombre" id="nombre" type="text" placeholder=" Introduce tu Nombre" required/>
+                                        <label for="phone"><strong>Numero de telefono: </strong></label>
+                                        <input name="telefono" id="phone" type="tel" placeholder=" Introduce tu telefono" pattern="[0-9]{9}" maxlength="9" required/>
+                                        <label for="email"><strong>Correo electronico: </strong></label>
+                                        <input name="email" id="email" type="email" placeholder=" Introduce tu correo" required/>
+                                </article>
+                                <article id="formaPedido">
+                                        <header><h3>Forma de pedido:</h3></header>
+                                        <label for="recogida"><strong>Seleccionar metodo recogida: </strong>
+                                            <select name="recogida" id="recogida">
+                                                <option value="llevar">Para llevar</option>
+                                                <option value="tomar">Para tomar aquí</option>
+                                            </select>
+                                        </label>
+                                        <br><br>
+                                            <strong>Forma de pago:</strong>
+                                            <label for="efectivo" >Efectivo </label>
+                                            <input type="radio" name="forma de pago" value="efectivo" id="efectivo" required/>
+                                            <label for="tarjeta">Tarjeta</label>
+                                            <input type="radio" name="forma de pago" value="tarjeta" id="tarjeta"/>
+                                            <br><br>
+                                            <label for="condiciones2"><strong>Aceptas las <a href="condiciones.html">condiciones</a> de servicio: </strong></label>
+                                            <input name="condiciones2" id="condiciones2" type="checkbox" required/>
+                                            <br><br>
+                                        <input type="submit" value="Aceptar">
+                                        <input type="reset" value="Borrar Formulario">
+                                </article>
+                                </section>
+                        </form>
+                    
+            <footer id="pie">Diego Moreno Alfaro &copy; 2019</footer>            
+        </div>
+    </body>
+</html>
